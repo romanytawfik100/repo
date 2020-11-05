@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+body{
+    height: 3000px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+nav{
+    background-color: #1b2546;
+}
+nav ul{
+    padding: 20px;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+nav ul li span.line{
+    display: block;
+    margin-top: 10px;
+    width: 0;
+    min-height: 2px;
+    background-color: #fff;
+    transition: width .5s ease-in-out;
+}
+nav ul li:hover span{
+    visibility: visible;
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+section.slider{
+    background: #74ebd5;
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+    background-attachment: fixed;
+    color: #fff;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.slider .img{
+    margin-left: 2%;
+}
+.slider .img, .slider .text{
+    width: 49%;
+    float: right;
+}
+.slider .img img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.slider .text p{
+    line-height: 1.7;
+}
+.slider .text h1{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 4%;
+}
+aside{
+    position: fixed;
+    left: .5%;
+    top: 30%;
+    width: 50px;
+}
+aside ul li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+aside ul li a img{
+    max-width: 100%;
+}
+.features{
+    text-align: center;
+    padding: 40px 0;
+}
+.features .feature-child{
+    padding: 10px 0;
+}
+.features .feature-child .icon img{
+    max-width: 100%;
+}
+.features .feature-child p{
+    line-height: 1.7;
+}
+.features .feature-child h3{
+    margin: 10px 0;
+}
+.features hr, .courses hr{
+    margin: 20px 0;
+    border: initial;
+    height: 1px;
+    background-color: #ccc;
+}
+.fl_left{
+    float: left;
+}
+.fl_right{
+    float: right;
+}
+.clearboth{
+    clear: both;
+}
+.courses{
+    padding: 40px 0;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+.courses .container > h1{
+    margin-bottom: 30px;
+}
+.courses hr{
+    background-color: #fff;
+}
+.courses .course{
+    padding: 10px;
+    text-align: right;
+    margin: 40px 0;
+}
+.courses .course .data, .courses .course .img{
+    width: 48%;
+}
+.courses .course .data{
+    margin: 40px 0;
+}
+.courses .course .data > div{
+    margin-top: 40px;
+}
+.courses .course .data > div button{
+    padding: 15px;
+    margin-left: 20px;
+    min-width: 150px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #eee;
+    transition: background-color .5s ease-in-out;
+    cursor: pointer;
+}
+.courses .course .data > div button:hover{
+    background-color: #1f1f1f;
+}
+.courses .course .data ul{
+    padding: 0 20px;
+}
+.courses .course .data ul li{
+    margin-bottom: 7px;
+}
+.courses .course .img{
+    height: 300px;
+}
+.courses .course .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
